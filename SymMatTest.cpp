@@ -4,7 +4,7 @@
 using namespace std;
 
 void SymMatTest::runTest() {
-  // Creating some example matrixes
+  // Creating some example matrices
   MatrixXd M(3,3);
   M << 1,2,3,
        2,5,6,
