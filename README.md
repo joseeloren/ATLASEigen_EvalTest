@@ -23,6 +23,6 @@ On the PDF is said that matrices must have same dimensions, understood as same r
 * Also, multiplication operator is not commutative, because operation order is defined on the PDF. In other operations like minus, it is like this too.
 
 ## Future work
-* Add more tests
-* Check run time in order to improve calculations
-* Refactor some common code in methods
+* Add more tests and refactor tests and data.
+* Check run time in order to improve calculations.
+* Refactor some common code in methods.
