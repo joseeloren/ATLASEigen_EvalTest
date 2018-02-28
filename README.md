@@ -8,10 +8,10 @@ Using `g++`, you have to run:
 ```bash
 g++ -std=c++11 -I /path/to/Eigen -lcppunit main.cpp SymMat.cpp SymMatTest.cpp -o SymMatTest
 ```
-
-*Note 1: You need to have Eigen installed: http://eigen.tuxfamily.org/index.php?title=Main_Page*
-*Note 2: On Debian, for example, the default path of Eigen is /usr/include/eigen3*
-*Note 3: You need to have cppunit installed: http://cppunit.sourceforge.net/doc/cvs/cppunit_cookbook.html*
+Notes:
+1. You need to have Eigen installed: http://eigen.tuxfamily.org/index.php?title=Main_Page*
+1. On Debian, for example, the default path of Eigen is /usr/include/eigen3*
+1. You need to have cppunit installed: http://cppunit.sourceforge.net/doc/cvs/cppunit_cookbook.html*
 
 ## Algorithm notes
 Please check Wiki for information about some calculation done on the code to solve the problem.
