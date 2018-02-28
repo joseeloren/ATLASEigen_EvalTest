@@ -21,12 +21,13 @@ Please check Wiki for information about some calculation done on the code to sol
 If N is a matrix with size mxn and M a matrix with size pxq, and m is not equal to n and p is not equal to q, you can do NxM if n is equal to p.
 On the PDF is said that matrices must have same dimensions, understood as same rows and cols.
 * Also, multiplication operator is not commutative, because operation order is defined on the PDF. In other operations like minus, it is like this too.
+* No template defined. SymMat is alone. I don't know if it has a fixed datatype or can have a template.
 
 ## Future work
 * Add more tests and refactor tests and data.
 * Test of more range of number
 * Check run time in order to improve calculations.
 * Refactor some common code in methods.
-* Use template to allow other types of data. Now double is fixed, but is because to not allow something that are not numbers.
+* Use template to allow other types of data. Now double is fixed, but is because to not allow something that are not numbers. It depends if it desirable or not.
 
 Note: I did my best on the time I have. I am a bit busy with university work and final project on this moment.
