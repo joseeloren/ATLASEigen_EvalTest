@@ -26,3 +26,4 @@ On the PDF is said that matrices must have same dimensions, understood as same r
 * Add more tests and refactor tests and data.
 * Check run time in order to improve calculations.
 * Refactor some common code in methods.
+Note: I did my best on the time I have. I am a bit busy with university work and final project on this moment.
