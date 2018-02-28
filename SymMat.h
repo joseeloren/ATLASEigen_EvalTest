@@ -11,6 +11,7 @@ using namespace std;
 class SymMat {
  private:
   vector<double> m;
+  size_t size;
  public:
   // Constructors
   SymMat(const Matrix<double, Dynamic, Dynamic> &m);

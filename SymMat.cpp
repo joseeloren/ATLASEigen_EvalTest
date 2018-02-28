@@ -8,15 +8,22 @@ SymMat::SymMat(const Matrix<double, Dynamic, Dynamic> &m) {
   if (m.rows() != m.cols())
     throw invalid_argument("Matrix must be symmetric");
   
+  this -> size = m.rows();
+  
   for (size_t i=0, nRows = m.rows(), nCols = m.cols(); i<nRows; ++i)
     for(size_t j=i; j<nCols; ++j)
       this->m.push_back(m(i,j));
 }
 
-SymMat::SymMat(initializer_list<double> l) : m(l) {}
+SymMat::SymMat(initializer_list<double> l) : m(l) {
+  // Check README on GitHub for information about this calculation
+  this->size = (-1+sqrt(1+8*(this->getVector()).size()))/2;
+}
 
 SymMat::SymMat(const vector<double> &m) {
   this->m = m;
+  //TODO - Refactor this equation
+  this->size = (-1+sqrt(1+8*(this->getVector()).size()))/2;
 }
 
 SymMat SymMat::operator+(const SymMat &m) const {
@@ -113,8 +120,7 @@ vector<double> SymMat::getVector() const {
 }
 
 size_t SymMat::getSize() const {
-  // Check README on GitHub for information about this calculation
-  return (-1+sqrt(1+8*(this->getVector()).size()))/2;
+  return this->size;
 }
 
 double SymMat::operator()(size_t i, size_t j) const{
