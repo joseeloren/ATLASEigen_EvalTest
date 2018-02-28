@@ -6,7 +6,7 @@ This project is the evaluation test required by ATLAS project from CERN for GSoC
 ## How to compile?
 Using `g++`, you have to run:
 ```bash
-g++ -std=c++11 -I /path/to/Eigen -lcppunit main.cpp SymMat.cpp SymMatTest.cpp -o SysMatTest
+g++ -std=c++11 -I /path/to/Eigen -lcppunit main.cpp SymMat.cpp SymMatTest.cpp -o SymMatTest
 ```
 
 *Note 1: You need to have Eigen installed: http://eigen.tuxfamily.org/index.php?title=Main_Page*
