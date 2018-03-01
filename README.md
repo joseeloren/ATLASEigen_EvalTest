@@ -29,5 +29,6 @@ On the PDF is said that matrices must have same dimensions, understood as same r
 * Check run time in order to improve calculations.
 * Refactor some common code in methods.
 * Use template to allow other types of data. Now double is fixed, but is because to not allow something that are not numbers. It depends if it desirable or not.
+* Create Doxygen documentation
 
 Note: I did my best on the time I have. I am a bit busy with university work and final project on this moment.
